@@ -1,0 +1,2 @@
+C:\Users\JakobLi\Source\Repos\TCmfaReset\RG-MFAReset\obj\Debug\RG-MFAReset.deployproj.CoreCompileInputs.cache
+C:\Users\jakob.li\source\repos\TCmfaReset\RG-MFAReset\obj\Debug\RG-MFAReset.deployproj.CoreCompileInputs.cache

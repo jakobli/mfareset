@@ -1,0 +1,19 @@
+﻿@model mfaReset.ViewModel.FeedbackViewModel
+@{
+    ViewBag.Title = "Feedback";
+}
+<div class="ms-Grid">
+    <div class="ms-Grid-row" id="feedback-form">
+        @using (Html.BeginForm("SendFeedback", "Home", FormMethod.Post))
+            {
+            <div>
+                <div class="ms-TextField ms-TextField-multiline">
+                    <label class="ms-Label">Please enter your feedback</label>
+                    @*<textarea name="FeedbackTextarea"  form="feedback-form" placeholder="Write here" class="ms-TextField ms-TextField-field"></textarea>*@
+                    @Html.TextAreaFor(x=>x.FeedbackTextArea,10,50,new { placeholder="Write here...", @class="ms-TextField "})
+                </div>
+                <input class="ms-Button" type="submit" value="Submit" />
+            </div>
+        }
+    </div>
+</div>

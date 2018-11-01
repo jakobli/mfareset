@@ -1,0 +1,26 @@
+﻿@using(Html.BeginForm("Reset", "Home", FormMethod.Post))
+{
+<div class="ms-TextField">
+    <label class="ms-Label">User</label>
+    <input type="text" name="userName" disabled class="ms-TextField ms-TextField-field" value="@Model.User.DisplayName" />
+    <input type="hidden" name="upn" class="ms-TextField ms-TextField-field" value="@Model.User.UserPrincipalName" />
+</div>
+<div class="ms-CheckBox">
+    <input type="checkbox" name="validUser" id="validUser" tabindex="-1" class="ms-CheckBox-input" />
+    <label role="checkbox" class="ms-CheckBox-field" tabindex="0" aria-checked="false" name="checkboxa">
+        <span class="ms-Label">I have verified that the actual user has requested this reset.</span>
+    </label>
+</div>
+<button id="MFAResetButton" type="submit" name="reset" class="ms-Button ms-Button--primary" disabled>
+    <span class="ms-Button-label">Reset User</span>
+</button>
+}
+<script>
+    $("#validUser").click(function () {
+        $("#MFAResetButton").attr("disabled", !this.checked);
+    });
+    var CheckBoxElements = document.querySelectorAll(".ms-CheckBox");
+    for (var i = 0; i < CheckBoxElements.length; i++) {
+        new fabric['CheckBox'](CheckBoxElements[i]);
+    }
+</script>

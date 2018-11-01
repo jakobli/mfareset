@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "websiteName": {
+      "value": "mfareset"
+    },
+    "appInsightName": {
+      "value": "mfareset-ai"
+    },
+    "functionAppName": {
+      "value": "mfareset-fn"
+    },
+    "hostingPlanName": {
+      "value": "sp-mfareset"
+    },
+    "functionO365UserName": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/212be6ed-9d8b-43e5-9b2b-a5af72c70e17/resourceGroups/rg-keyvault/providers/Microsoft.KeyVault/vaults/thomascook"
+        },
+        "secretName": "TCNE-O365-AUT-USER"
+      }
+    },
+    "skuName": {
+      "value": "B1"
+    },
+    "storageAccountName": {
+      "value": "mfareset"
+    },
+    "storageAccountType": {
+      "value": "Standard_LRS"
+    },
+    "tableEncryptionEnabled": {
+      "value": true
+    },
+    "tagValues": {
+      "value": {
+        "createdBy": "Master",
+        "managedBy": "jakob.li@thomascook.se",
+        "deplyomentId": "Release0",
+        "maintenanceTeam": "MCOE",
+        "serviceCatalogId": "12345",
+        "billTo": "TCNE-BIT-350"
+      }
+    }
+  }
+}

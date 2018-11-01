@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>    
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\en-us\Microsoft.Online.Administration.Automation.PSModule.Resources.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\en-us\Microsoft.Online.Identity.Federation.PowerShell.Strings.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Azure.ActiveDirectory.Client.Framework.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Azure.ActiveDirectory.GraphClient.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Data.Edm.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Data.OData.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Data.Services.Client.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Online.Administration.Automation.PSModule.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Online.Administration.Automation.PSModule.Resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Online.Identity.Federation.PowerShell.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\MSOnline.Format.ps1xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\MSOnline.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\PSGetModuleInfo.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\RestSharp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\System.IdentityModel.Tokens.Jwt.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\bin\MSOnline\1.1.166.0\System.Spatial.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\function.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MFAReset-PS\run.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+﻿@model mfaReset.ViewModel.HomeViewModel
+<h2 class="ms-font-xl">MFA Reset</h2>
+<p class="ms-font-l">Use this form to reset users MFA settings. </p>
+<br />
+
+<div class="ms-Grid">
+    <div class="ms-Grid-row" id="search-form">
+        @using (Ajax.BeginForm("Search", "Home", FormMethod.Post,
+                                                        new AjaxOptions
+                                                        {
+                                                            InsertionMode = InsertionMode.Replace,
+                                                            HttpMethod = "POST",
+                                                            UpdateTargetId = "search-results"
+                                                        }))
+        {
+            <div>
+                <div class="ms-TextField">
+                    <label class="ms-Label">Please enter the User Principal Name (john.doe@yourdomain.com)</label>
+                    <input type="text" name="query" class="ms-TextField ms-TextField-field" />
+                </div>
+                <input class="ms-Button" type="submit" value="Search" />
+            </div>
+        }
+    </div>
+
+    <div class="ms-Grid-row" id="search-results">
+
+    </div>
+</div>

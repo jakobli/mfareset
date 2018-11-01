@@ -1,0 +1,30 @@
+﻿
+@if (Session["Error"] != null)
+{
+
+    <div class="ms-bgColor-error ms-borderColor-error ms-MessageBanner">
+        <div class="ms-MessageBanner-content">
+            <div class="ms-MessageBanner-text">
+                <div class="ms-font-m">
+                    <i class="ms-Icon ms-Icon--alert ms-fontColor-error"></i> @Session["Error"]
+                </div>
+            </div>
+        </div>
+    </div>
+
+    Session.Remove("Error");
+}
+
+@if (Session["Success"] != null)
+{
+    <div class="ms-bgColor-success ms-borderColor-success ms-MessageBanner">
+        <div class="ms-MessageBanner-content">
+            <div class="ms-MessageBanner-text">
+                <div class="ms-font-l ">
+                    <p><i class="ms-Icon ms-Icon--check ms-fontColor-green"></i>@Session["Success"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    Session.Remove("Success");
+}

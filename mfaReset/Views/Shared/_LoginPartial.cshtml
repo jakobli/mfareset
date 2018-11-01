@@ -1,0 +1,20 @@
+﻿@if (Request.IsAuthenticated)
+{
+    <text>
+         <ul class="nav navbar-nav navbar-right">
+            <li>
+                @*@Html.ActionLink("Hello " + User.Identity.Name + "!", "Index", "UserProfile", routeValues: null, htmlAttributes: null)*@
+                @Html.ActionLink("Feedback", "Feedback", "Home", null, new { @class = "mfareset-navbar" })
+            </li>
+            <li class="mfareset-navbar">
+                @Html.ActionLink("Sign out", "SignOut", "Account",null ,new { @class = "mfareset-navbar" })
+            </li>
+        </ul>
+    </text>
+}
+else
+{
+     <ul class="nav navbar-nav navbar-right">
+        <li  class="mfareset-navbar">@Html.ActionLink("Sign in", "SignIn", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class="mfareset-navbar" })</li>
+    </ul>
+}

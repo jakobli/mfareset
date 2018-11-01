@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mfaReset", "mfaReset\mfaReset.csproj", "{AE517BFA-6FB5-4300-A425-1D6E1C76458D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mfareset-function", "mfareset-function\mfareset-function.csproj", "{59E9EC54-3BB5-46F5-A17E-857433FB9FAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mfaResetTests", "mfaResetTests\mfaResetTests.csproj", "{1139FF0C-CAAB-40CF-B96D-B05B458A3107}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "RG-MFAReset", "RG-MFAReset\RG-MFAReset.deployproj", "{767F53F1-C497-4922-987F-0669A513F995}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE517BFA-6FB5-4300-A425-1D6E1C76458D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE517BFA-6FB5-4300-A425-1D6E1C76458D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE517BFA-6FB5-4300-A425-1D6E1C76458D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE517BFA-6FB5-4300-A425-1D6E1C76458D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E9EC54-3BB5-46F5-A17E-857433FB9FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E9EC54-3BB5-46F5-A17E-857433FB9FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E9EC54-3BB5-46F5-A17E-857433FB9FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E9EC54-3BB5-46F5-A17E-857433FB9FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1139FF0C-CAAB-40CF-B96D-B05B458A3107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1139FF0C-CAAB-40CF-B96D-B05B458A3107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1139FF0C-CAAB-40CF-B96D-B05B458A3107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1139FF0C-CAAB-40CF-B96D-B05B458A3107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767F53F1-C497-4922-987F-0669A513F995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767F53F1-C497-4922-987F-0669A513F995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767F53F1-C497-4922-987F-0669A513F995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767F53F1-C497-4922-987F-0669A513F995}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EDD4BEC-A287-459B-9B5A-D76827E1ACDB}
+	EndGlobalSection
+EndGlobal
